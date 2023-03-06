@@ -1,0 +1,33 @@
+* {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-family: 'Rubik', sans-serif;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+}
+nav {
+        background: #1e4c3d;
+        height: auto;
+}
+nav ul {
+        display: flex;
+        height: inherit;
+        padding: 15px;
+}
+
+nav ul li {
+        background: red;
+        width: max-content;
+}
+
+nav ul li:not(:last-child) {
+        margin-right: 15px;
+}      
+
+nav ul li:first-child {
+        margin-left: 250px;
+}
+
