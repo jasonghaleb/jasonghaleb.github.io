@@ -59,7 +59,7 @@ for (a = 1; a < 5; a++) {
         } else if (a === 3 && (b === 0 || b === 4)) {
             tr.append(td.append(pol(1, 0, 5)));
             td.children().css({
-                "background-color": "#d6f031",
+                "background-color": "#f6f361",
                 color: "#1d1d1f",
                 "font-weight": "900",
             });
@@ -69,14 +69,14 @@ for (a = 1; a < 5; a++) {
         else if (a === 2 && b === 1) {
             tr.append(td.append(pol(1, 1, 5)));
             td.children().css({
-                "background-color": "#d6f031",
+                "background-color": "#f6f361",
                 color: "#1d1d1f",
                 "font-weight": "900",
             });
         } else if (a === 2 && b === 3) {
             tr.append(td.append(pol(1, 1, 0)));
             td.children().css({
-                "background-color": "#d6f031",
+                "background-color": "#f6f361",
                 color: "#1d1d1f",
                 "font-weight": "900",
             });
