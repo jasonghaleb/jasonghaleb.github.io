@@ -1,4 +1,3 @@
-"use strict";
 const ctx = $("#myChart");
 Chart.defaults.color = "#f5f5f7";
 Chart.defaults.borderColor = "#d6d6d6";
