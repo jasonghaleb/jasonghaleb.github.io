@@ -1,53 +1,3 @@
-const ctx = $("#myChart");
-Chart.defaults.color = "#f5f5f7";
-Chart.defaults.borderColor = "#d6d6d6";
-Chart.defaults.font.size = 16;
-
-const data = {
-    labels: [
-        "Bahrain",
-        "Iran",
-        "Iraq",
-        "Jordan",
-        "Kuwait",
-        "Lebanon",
-        "Oman",
-        "Palestine",
-        "Qatar",
-        "Saudi Arabia",
-        "Syria",
-        "UAE",
-        "Yemen",
-    ],
-    datasets: [
-        {
-            label: "Internet Penetration (%)",
-            data: [99.0, 78.6, 74.9, 88.0, 99.0, 86.6, 96.4, 74.6, 99.0, 99.0, 35.8, 99.0, 26.7],
-            backgroundColor: "#f6f361",
-        },
-    ],
-};
-new Chart(ctx, {
-    type: "bar",
-    data: data,
-    options: {
-        indexAxis: "y",
-    },
-});
-
-const mql = window.matchMedia("(max-width: 828px)");
-function screenTest(e) {
-    if (e.matches) {
-        Chart.defaults.aspectRatio = 3 / 5;
-        Chart.defaults.font.size = 14;
-    } else {
-        Chart.defaults.aspectRatio = 5 / 3;
-        Chart.defaults.font.size = 16;
-    }
-}
-
-mql.addEventListener("change", screenTest);
-
 const info = [
     {
         img: "../images/www3.png",
@@ -116,3 +66,55 @@ info.map((item) => {
     c++;
     $(".main-search").prepend(x);
 });
+
+const ctx = $("#myChart");
+Chart.defaults.color = "#f5f5f7";
+Chart.defaults.borderColor = "#d6d6d6";
+Chart.defaults.font.size = 16;
+
+const data = {
+    labels: [
+        "Bahrain",
+        "Iran",
+        "Iraq",
+        "Jordan",
+        "Kuwait",
+        "Lebanon",
+        "Oman",
+        "Palestine",
+        "Qatar",
+        "Saudi Arabia",
+        "Syria",
+        "UAE",
+        "Yemen",
+    ],
+    datasets: [
+        {
+            label: "Internet Penetration (%)",
+            data: [99.0, 78.6, 74.9, 88.0, 99.0, 86.6, 96.4, 74.6, 99.0, 99.0, 35.8, 99.0, 26.7],
+            backgroundColor: "#f6f361",
+        },
+    ],
+};
+new Chart(ctx, {
+    type: "bar",
+    data: data,
+    options: {
+        indexAxis: "y",
+    },
+});
+
+const mql = window.matchMedia("(max-width: 828px)");
+function screenTest(e) {
+    if (e.matches) {
+        Chart.defaults.aspectRatio = 3 / 5;
+        Chart.defaults.font.size = 14;
+    } else {
+        Chart.defaults.aspectRatio = 5 / 3;
+        Chart.defaults.font.size = 16;
+    }
+}
+
+mql.addEventListener("change", screenTest);
+
+
