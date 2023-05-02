@@ -1,4 +1,3 @@
-"use strict";
 (function () {
     let padding = "22px",
         p1 = "30px",
