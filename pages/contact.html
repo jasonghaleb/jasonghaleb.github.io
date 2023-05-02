@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
+        <link rel="icon" href="../images/logo.png" type="image/icon type" />
+        <title>IT</title>
+    </head>
+    <body>
+        <div>
+            <nav class="container navbar">
+                <div class="parent parent-nav">
+                    <ul class="list">
+                        <li class="nav-logo">
+                            <a href="./">
+                                <img src="../images/logo.png" alt="logo" />
+                            </a>
+                        </li>
+                        <button class="hamburger">
+                            <div class="lines">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="container main main-contact" style="background-color: #f6f361">
+                <div class="parent">
+                    <div class="contact">
+                        <section class="contact-pic">
+                            <img src="../images/Call center-cuate.png" alt="" />
+                        </section>
+                        <section class="contact-form">
+                            <form id="contact-form" action="submit.php" method="post">
+                                <div class="form-container">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        required
+                                        autocomplete="off" />
+                                    <label for="name" class="label--">
+                                        <span class="content--">Name</span>
+                                    </label>
+                                </div>
+                                <div class="form-container">
+                                    <input type="email" name="email" id="email" required />
+                                    <label for="email" class="label--">
+                                        <span class="content--">Email</span>
+                                    </label>
+                                </div>
+                                <div class="form-container">
+                                    <input type="tel" name="number" required />
+                                    <label for="number" class="label--">
+                                        <span class="content--">Number</span>
+                                    </label>
+                                </div>
+                                <label for="message" style="margin-bottom: 4px">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    required
+                                    style="
+                                        border-bottom: 1px solid #1d1d1f;
+                                        margin-bottom: 22px;
+                                    "></textarea>
+                                <input type="submit" class="subtn" value="Sumbit" />
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="../js/index.js"></script>
+        <script src="../js/contact.js"></script>
+    </body>
+</html>
